@@ -1,10 +1,10 @@
-*{
+/* *{
    border: 1px solid red;
  }
  
  body{
    border: 2px dashed green;
- }
+ } */
 
 .quicksand-font {
   font-family: "Quicksand", serif;
@@ -117,6 +117,18 @@ color: rgba(93, 88, 239, 1);
 
 
  /* curriculume section  */
+main{
+   background-image: url(B11-A2-Kids-School/assets/bg.png);
+   height: 100%;
+   width: 100%;
+   background-color: rgb(255, 255, 255);
+  
+
+   
+ }
+ main{
+  background-image: linear-gradient( rgb(255, 255, 255) 22%, rgb(201, 157, 207) 150%);
+ }
    .curriculum-taitel{
       font-size: 46px;
       font-weight: bold;
@@ -135,7 +147,7 @@ color: rgba(93, 88, 239, 1);
  }
 
  .card-1{
-   background-color: rgb(0, 162, 255);
+   background-color: rgb(147, 199, 229);
    background-image: linear-gradient(rgb(144, 200, 236), rgb(207, 207, 203));
    border-radius: 12px;
    height: 400px;
@@ -145,7 +157,7 @@ color: rgba(93, 88, 239, 1);
  }
  .card-2{
    background-color: orange;
-   background-image: linear-gradient(rgb(255, 174, 0), rgb(207, 207, 203));
+   background-image: linear-gradient(rgb(240, 206, 134) , rgb(207, 207, 203));
    border-radius: 12px;
    height: 400px;
    width: 367px;
@@ -154,7 +166,7 @@ color: rgba(93, 88, 239, 1);
  }
  .card-3{
    background-color: rgb(0, 162, 255);
-   background-image: linear-gradient(rgb(144, 70, 240), rgb(207, 207, 203));
+   background-image: linear-gradient(rgb(194, 160, 238) 22%, rgb(207, 207, 203) 77%);
    border-radius: 12px;
    height: 400px;
    width: 367px;
@@ -162,9 +174,150 @@ color: rgba(93, 88, 239, 1);
    padding: 10px;
  }
 
+ .card-taitel{
+   font-size: 24px;
+   font-weight: bold;
+   padding-top: 30px;
+ }
+ .card-discription{
+   font-size: 15px;
+   font-weight: 400;
+   color: dimgray;
+   padding-top: 30px;
+   padding-bottom: 30px;
+
+ }
+
+ .card-a{
+   font-weight: bold;
+   color: darkgreen;
+ }
+ .card-aa{
+   font-weight: bold;
+   color: chocolate;
+ }
+ .card-aaa{
+   font-weight: bold;
+   color: rgb(255, 0, 0);
+   margin-top: 38px;
+ }
+ .card-1 > a{
+   text-decoration: none;
+   padding-top: 30px;
+
+ }
+ .circle-dad{
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: 30px;
+   
+ }
+ .circle{
+   width: 50px;
+   height: 50px;
+   background-color: orange;
+   border-radius: 50%;
+   display: inline-block;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   color: azure;
+   font-size: 37px;
+   margin-right: 12px;
+ }
+
+ /* our storise section  */
+.story-headign{
+  text-align: center;
+}
+ .Our-Stories{
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   gap: 12px
+   ;
+ }
+ .story-card-2{
+  grid-row: span 2;
+  width: 540px;
+  height: 630px;
+ }
+
+ .himel-1 {
+   display: block;
+   flex-direction: column;
+   background-color: rgb(255, 153, 0);
+   
+   border-radius: 14px;
+
+ }
+ .story-card-1 > img{
+  border-radius: 12px;
+
+ }
+ .story-card-1{
+  height: 301px;
+  width: 290px;
+  
+ }
+.card-discription2{
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.story-btn1{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(0, 195, 255);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+
+}
+.story-btn2{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(21, 255, 0);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+
+}
+.story-btn3{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(255, 208, 0);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+  padding-right: 25px;
+
+}
+.story-btn4{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(0, 38, 255);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+
+}
+.story-btn5{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 16px;
+  padding: 12px;
+
+}
+
 /* responsiv section  */
 @media screen and (max-width:576px){
-   
+   .navbar{
+      display: block;
+   }
    .nav-name ul, .school, .nav-btn{
       visibility: hidden;
    }  
@@ -185,7 +338,7 @@ color: rgba(93, 88, 239, 1);
      
    }
    .banner-image img{
-      width: 74%;
+      width: 100%;
       /* height: 411px; */
       
    }
@@ -207,7 +360,25 @@ color: rgba(93, 88, 239, 1);
    .curriculum-box{
       display: grid;
       grid-template-columns: repeat(1,1fr);
+     
    
 }
 
+    .himel{
+      display: none;
+    }
+    .Our-Stories{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px
+      ;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .story-card-1{
+      height: 301px;
+      width: 290px;
+      
+     }
 }
