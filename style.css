@@ -1,10 +1,10 @@
-*{
+/* *{
    border: 1px solid red;
  }
  
  body{
    border: 2px dashed green;
- }
+ } */
 
 .quicksand-font {
   font-family: "Quicksand", serif;
@@ -133,12 +133,12 @@ main{
    background-color: rgb(255, 255, 255);
    background-size: 100% 100%;
    padding-bottom: 30px;
-  
+   background-image: linear-gradient( rgb(255, 255, 255) 22%, rgb(201, 157, 207) 150%);
+
 
    
  }
  main{
-  background-image: linear-gradient( rgb(255, 255, 255) 22%, rgb(201, 157, 207) 150%);
  }
    .curriculum-taitel{
       font-size: 46px;
